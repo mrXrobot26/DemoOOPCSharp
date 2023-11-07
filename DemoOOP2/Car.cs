@@ -12,6 +12,18 @@ namespace DemoOOP2
         public string name;
         public string Brand;
 
+        public Car(string _Color , string _name , string _Brand)
+        {
+            Color = _Color;
+            name = _name;
+            Brand = _Brand;
+
+        }
+
+
+
+
+
         public void Move()
         {
             Console.WriteLine("car is moving right now");
