@@ -1,51 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
+using System.Runtime.Intrinsics;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DemoOOP2
 {
-    public class Car
+    public class Car : Vechceil // child deriven
     {
-        public string Color;
         public string name;
-        public string Brand;
-
-        public Car(string _Color , string _name , string _Brand)
+        public Car() : base()
         {
-            Color = _Color;
-            name = _name;
-            Brand = _Brand;
-
+            Console.WriteLine("iam in car");
         }
-
-
-
-
-
-        public void Move()
-        {
-            Console.WriteLine("car is moving right now");
-        }
-
-        public void Stop()
-        {
-            Console.WriteLine("car Stopped");
-        }
-
-        public void speedUp()
-        {
-            Console.WriteLine("car Speeding up Now");
-        }
-        public void speedDown()
-        {
-            Console.WriteLine("car Speeding Down Now");
-        }
-
-
-
-
+        
+        
 
     }
 }
